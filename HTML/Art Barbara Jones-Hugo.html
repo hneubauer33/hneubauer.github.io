@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Barbara Jones-Hugo</title>	
+<link href="../CSS/Barbara Jones-Hugo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="cover">
+	<div class="tab">
+   <a href = "index.html"><button class = "home">The<br>Barbara Jones-Hogu<br>Exhibit</button></a>
+	<a href = "Art Barbara Jones-Hugo.html"><button class="tablinks" >Art</button></a>
+	<a href = "Artist Barbara Jones-Hugo.html"><button class="tablinks" >Artist</button></a>
+	<a href = "About Barbara Jones-Hugo.html"><button class="tablinks">About</button></a>
+</div>
+		<p></p>
+
+	<div class = "row">
+		
+		<div class ="column">
+			<img src="C:\Users\Hannah Neubauer\Creative Cloud Files\Websites\Barbara\Images\MF.jpg" alt = "I’m Better Than These Motherfuckers" onclick="myFunction(this,1);" style = "width:100%">
+		</div>
+		
+		<div class ="column">
+			<img src="C:\Users\Hannah Neubauer\Creative Cloud Files\Websites\Barbara\Images\BlackMenWeNeedYou.jpg" alt = "Black Men We Need You" onclick="myFunction(this,2);" style = "width:100%">
+		</div>
+		
+		<div class ="column">
+			<img src="C:\Users\Hannah Neubauer\Creative Cloud Files\Websites\Barbara\Images\RelateToYourHeritage.jpg" alt = "Relate To Your Heritage" onclick="myFunction(this,3);" style = "width:100%">
+		</div>
+		
+		<div class ="column">
+			<img src="C:\Users\Hannah Neubauer\Creative Cloud Files\Websites\Barbara\Images\RiseAndTakeControl.jpg" alt = "Rise and Take Control" onclick="myFunction(this,4);" style = "width:100%">
+		</div>
+		
+		<div class ="column">
+			<img src="C:\Users\Hannah Neubauer\Creative Cloud Files\Websites\Barbara\Images\Unite.jpeg" alt = "Unite" onclick="myFunction(this,5);" style = "width:100%">
+		</div>
+		
+		<div class ="column">
+			<img src="C:\Users\Hannah Neubauer\Creative Cloud Files\Websites\Barbara\Images\WallOfRespect.jpg" alt = "The Wall of Respect" onclick="myFunction(this,6);" style = "width:100%">
+		</div>
+		
+		<div class ="column">
+			<img src="C:\Users\Hannah Neubauer\Creative Cloud Files\Websites\Barbara\Images\WhenStyling.jpg" alt ="When Styling" onclick="myFunction(this,7);" style = "width:100%">
+		</div>
+		
+		<div class ="column">
+			<img src="C:\Users\Hannah Neubauer\Creative Cloud Files\Websites\Barbara\Images\MotherOfMan.jpg" alt = "Mother of Man" onclick="myFunction(this,8);" style = "width:100%">
+		</div>
+		</div>
+		
+		<div class="container">
+			
+			<!-- Expanded image -->
+			
+			<img id="expandedImg"  alt = "expandingImg">
+			
+			<!-- Image text -->
+			<div id="imgtext"></div>
+		
+		
+		</div>
+		<h1></h1>
+<script>
+	function myFunction(imgs, x) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image		
+		if( x == 1){
+			imgText.innerHTML =  "<strong> Barbara Jones-Hogu, “I’m Better Than These Motherfuckers” (1970), Color screenprint </strong></br></br>“I’m Better Than These Motherfuckers” depicts a Black woman sitting calmly on a beach, surrounded by less visible figures. The woman are surrounded by dense bright colors and patterns, the words “I am better than these mother fuckers and they know it” sits below her. The piece sends a direct message that Black beauty and confidence will prevail no matter the opposition. Jones-Hogu’s positive view towards confident Black women is also matched with the fierceness against any negativity during the civil rights movement. Her print matched the AfriCOBRA aesthetic of using the celebration of Black females to bring about strength.";
+		}
+		else if(x == 2){
+			imgText.innerHTML = "<strong>Barbara Jones-Hogu, “Black Men We Need You” (1971), Screenprint </strong></br></br>The print “Black Men We Need You” depicts an African American family with the words “Black Men We Need You” in large print and in smaller print “Black Men Preserve Our Race Leave White Bitches Alone.” Barbara Jones-Hogu explains that “This one is Black Men We Need You chuckles, some people got upset about the fact that I put underneath “Leave Those White Bitches Alone” down there. However, during the Civil Rights Movement, we had many males that were talking black and sleeping white, you know, that is what we called it. That’s not what they had in their art, but it all comes down to what I said.”";
+		}
+		else if(x == 3){
+			imgText.innerHTML = "<strong>Barbara Jones-Hogu, “Relate to Your Heritage” (1970), Screenprint</strong></br></br>A large part of the AfriCOBRA aesthetic was Black pride and celebrating African identity. In this print Barbara Jones-Hogu has six African figures, in a deep purple and black, dressed in tradition African attire. One figure adorns an african crown, two tribal make-up, another a traditional dhuku. The figures are surrounded by the phrase “Relate to Your Heritage.” Jones-Hogu is presenting the idea that African Americans should be proud of their heritage and embrace the culture of Africa.";
+		}
+		else if(x == 4){
+			imgText.innerHTML = "<strong>Barbara Jones-Hogu, “Rise and Take Control” (1970), Screenprint</strong></br></br>The print “Rise and Take Control” focus is on three Black faces in a trinity. The faces are surrounded by the words “Let’s Rise and Take Control.” Barbara Jones-Hogu is responding to the civil rights movement and the political supression that is affecting African Americans. Much like her most popular print “Unite,” this print urges the Black Community to come together. Jones-Hogu’s prints were utilized in Africobra as a marketing piece because prints could be inexpensively produced. Jones-Hogu explains that “personally, I was not concerned about the distributions of prints before AFRICOBRA. The political potential of distributing prints to more people was discussed as a part of AFRICOBRA, in terms of doing prints so that “everyone who wanted one could have one.” We did prints for each member’s message in the painting of their choice and distribution was a key element for the prints. All of our messages were considered political at this point.”";
+		}
+		else if(x == 5){
+			imgText.innerHTML = "<strong>Barbara Jones-Hogu, “Unite (First State”) (1969), Screenprint</strong></br></br>“Unite” is Barbara Jones-Hogu’s most well known print. It depicts a crowd of black figures with fist raised. Above them the words UNITE explode across the background in bold font and bright colors. The words are shaped like microphones as if being shouted across the page. One of Africobras goals was to bring to light the political struggles during the time of the Civil War. In this image Jones-Hogu is presenting an ideal of community amongst Black Americans while tensions were rising in America. The image was inspired by an Elizabeth Catlett sculpture, “Homage to My Young Black Sisters”(1968).";
+		}
+		else if(x == 6){
+			imgText.innerHTML = "<strong>Various Artists, “Wall of Respect” (1967), Mural</strong></br></br>The “Wall of Respect” was created by many artists, some which would go on to form AfriCOBRA, including Barbara Jones-Hogu. The mural would feature more than 50 portraits and be divided into seven sections that followed the building’s architectural features: Statesmen (such as Malcolm X), Athletes (Muhammad Ali), Rhythm and Blues (Aretha Franklin), Religion (Nat Turner), Literature (Gwendolyn Brooks), Theater (Cicely Tyson), and Jazz (Miles Davis). The mural was meant to uplift African Americans and provide images of strong leaders during the civil rights movement.";
+		}
+		else if(x == 7){
+			imgText.innerHTML= "<strong>Barbara Jones-Hogu, “When Styling” (1973), Screenprint</strong></br></br>Barbara Jones-Hogu use of traditional African colors, expressive fonts, and exciting figures makes “When Styling” an inspirational piece for all African Americans. The figures are dressed in funky 70s clothing and debut natural hair. They stand proud and as the text say they are “self-determined.” Jones-Hugo is asking African Americans to use their exterior appearance in order to show that they are proud of who they are. This piece is a direct response to the civil rights movement because it urges African Americans to outwardly express themselves in retaliation to racial persecution.";
+		}
+		else if(x == 8){
+			imgText.innerHTML = "<strong>Barbara Jones-Hogu, “Mother of Man” (1968), Woodcut</strong></br></br>The image “Mother of Man” is a print carved from wood, inked and printed on paper. The image shows a skeleton with a large afro. In her womb there is a ball of light. The figure stands tall and proud. Behind them is a waving american flag. The image represents what it means to be an Black mother in american. You must protect your children from American political and social injustices. While doing so, you are to give everything up and are left with just bones. Despite this hardship, a mother will still stand strong and tall for what is right."; 
+		}
+		else if(x === undefined){
+			  imgText.innerHTML = imgs.alt;
+		}
+
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}// JavaScript Document</script>
+		</div>
+<div class="footer">
+		<p class = "footerText">Art 252<br>Introduction to Afro-American Art<br>Fall 2020</p>
+		<p class = "footerText"><br>University of Wisconsin-Madison</p>
+		<p class = "footerText"><br>Professor Melanie Herzog </p>		
+		<p class = "footerText"><br>By Hannah Neubauer</p>
+
+
+	  </div>
+
+</body>
+	
+</html>
+
